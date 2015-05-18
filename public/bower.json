@@ -1,0 +1,17 @@
+{
+  "name": "Leonardo Loyo",
+  "version": "0.0.1",
+  "authors": [
+    "Leonardo Loyo <cyberedward@gmail.com>"
+  ],
+  "description": "Paquetes del frontend para el proyecto drsoft",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "homepage": "drsoft",
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "bootstrap-material-design": "~0.3.0"
+  }
+}
