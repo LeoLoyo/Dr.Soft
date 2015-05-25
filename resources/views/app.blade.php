@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>@section('title')Laravel @show</title>
+	<title>@section('title')Dra.Soft @show</title>
 	{!! Html::style('bower_components/bootstrap/dist/css/bootstrap.min.css') !!}
 	{!! Html::style('bower_components/bootstrap-material-design/dist/css/material.min.css') !!}
 	{!! Html::style('bower_components/bootstrap-material-design/dist/css/ripples.min.css') !!}
@@ -45,6 +45,8 @@
 					@if (Auth::guest())
 						<li><a href="{!! url('/auth/login') !!}">Iniciar Sesion</a></li>
 						<li><a href="{!! url('/auth/register') !!}">Registrarse</a></li>
+						<li><a href="{!! url('/pacientes') !!}">Pacientes</a></li>
+						<li><a href="{!! url('/contacto') !!}">Contacto</a></li>
 					@else
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
@@ -53,13 +55,14 @@
 							</ul>
 						</li>
 					@endif
+
 				</ul>
 			</div>
 		</div>
 	</nav>
-
-	@yield('content')
-
+	<div class="container">
+		@yield('content')
+	</div>
 	<!-- Scripts -->
 	{!! Html::script('bwer_components/jqueryy/dist/jquer.min.js') !!}
 	{!! Html::script('bwer_components/bootstrap/dist/js/bootstrap.min.js') !!}
