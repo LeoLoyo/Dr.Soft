@@ -26,3 +26,4 @@ Route::controllers([
 //Route::put("pacientes/{id}","PacienteController@update");
 //Route::delete("pacientes/{id}","PacienteController@destroy");
 resource('pacientes','PacienteController');
+resource('citas','CitasController');
